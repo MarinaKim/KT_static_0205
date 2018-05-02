@@ -1,4 +1,5 @@
 #include"Student.h"
+#include<cstring>
 int Students::std_count;
 
 void example() {
@@ -27,6 +28,21 @@ int main() {
 		example();
 		example();
 
+	}break;
+
+	case 3: {
+		char str1[] = "This is example string";
+		char str2[] = "is";
+
+		cout << strstr(str1, str2) <<endl;
+
+	}break;
+
+	case 4: {
+		string str1 = "This is example string";
+		char str2[] = "is";
+
+		cout << strstr(str1.c_str(), str2)-str1.c_str() << endl;
 	}break;
 	}
 
